@@ -1,0 +1,21 @@
+text The objective in every level is to reach the goal. You move the player with the arrow keys.
+
+tiles 4
+
+tile 0
+translate 0.0 0.0 0.0
+north2 1
+
+tile 1
+translate 0.0 0.0 -2.0
+north2 2
+
+tile 2
+translate 0.0 0.0 -4.0
+north2 3
+
+tile 3
+translate 0.0 0.0 -6.0
+
+start 0
+goal 3

@@ -1,0 +1,105 @@
+text Every level in indigo is a maze. To reach the goal, you have to solve it.
+
+tiles 25
+
+tile 0
+translate 0.0 0.0 0.0
+north2 5
+
+tile 1
+translate 2.0 0.0 0.0
+north2 6
+east2 2
+
+tile 2
+translate 4.0 0.0 0.0
+east2 3
+
+tile 3
+translate 6.0 0.0 0.0
+north2 8
+east2 4
+
+tile 4
+translate 8.0 0.0 0.0
+
+tile 5
+translate 0.0 0.0 -2.0
+north2 10
+east2 6
+
+tile 6
+translate 2.0 0.0 -2.0
+
+tile 7
+translate 4.0 0.0 -2.0
+north2 12
+east2 8
+
+tile 8
+translate 6.0 0.0 -2.0
+
+tile 9
+translate 8.0 0.0 -2.0
+north2 14
+
+tile 10
+translate 0.0 0.0 -4.0
+north2 15
+
+tile 11
+translate 2.0 0.0 -4.0
+north2 16
+
+tile 12
+translate 4.0 0.0 -4.0
+east2 13
+
+tile 13
+translate 6.0 0.0 -4.0
+east2 14
+
+tile 14
+translate 8.0 0.0 -4.0
+north2 19
+
+tile 15
+translate 0.0 0.0 -6.0
+north2 20
+
+tile 16
+translate 2.0 0.0 -6.0
+north2 21
+east2 17
+
+tile 17
+translate 4.0 0.0 -6.0
+north2 22
+
+tile 18
+translate 6.0 0.0 -6.0
+north2 23
+east2 19
+
+tile 19
+translate 8.0 0.0 -6.0
+
+tile 20
+translate 0.0 0.0 -8.0
+east2 21
+
+tile 21
+translate 2.0 0.0 -8.0
+
+tile 22
+translate 4.0 0.0 -8.0
+
+tile 23
+translate 6.0 0.0 -8.0
+east2 24
+
+tile 24
+translate 8.0 0.0 -8.0
+
+start 0
+goal 24

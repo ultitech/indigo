@@ -1,0 +1,245 @@
+#seed 1391882599
+text Going round...
+
+tiles 40
+
+tile 0
+rotate_z 0.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+west 7
+north 8
+tile 1
+rotate_z 45.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 2
+north 9
+tile 2
+rotate_z 90.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+west 1
+north 10
+tile 3
+rotate_z 135.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 4
+tile 4
+rotate_z 180.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 5
+west 3
+tile 5
+rotate_z 225.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 6
+west 4
+north 13
+tile 6
+rotate_z 270.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 7
+west 5
+tile 7
+rotate_z 315.000000
+translate 2.550000 0.000000 -0.000000
+rotate_z 90.000000
+east 0
+west 6
+tile 8
+rotate_z 0.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+east 9
+south 0
+tile 9
+rotate_z 45.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+west 8
+south 1
+tile 10
+rotate_z 90.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+east 11
+south 2
+tile 11
+rotate_z 135.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+east 12
+west 10
+tile 12
+rotate_z 180.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+west 11
+north 20
+tile 13
+rotate_z 225.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+east 14
+south 5
+tile 14
+rotate_z 270.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+west 13
+north 22
+tile 15
+rotate_z 315.000000
+translate 2.550000 0.000000 -2.000000
+rotate_z 90.000000
+north 23
+tile 16
+rotate_z 0.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+east 17
+west 23
+tile 17
+rotate_z 45.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+west 16
+north 25
+tile 18
+rotate_z 90.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+north 26
+tile 19
+rotate_z 135.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+east 20
+north 27
+tile 20
+rotate_z 180.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+west 19
+south 12
+tile 21
+rotate_z 225.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+east 22
+north 29
+tile 22
+rotate_z 270.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+west 21
+south 14
+tile 23
+rotate_z 315.000000
+translate 2.550000 0.000000 -4.000000
+rotate_z 90.000000
+east 16
+north 31
+south 15
+tile 24
+rotate_z 0.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+east 25
+tile 25
+rotate_z 45.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+east 26
+west 24
+south 17
+tile 26
+rotate_z 90.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+west 25
+south 18
+tile 27
+rotate_z 135.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+north 35
+south 19
+tile 28
+rotate_z 180.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+north 36
+tile 29
+rotate_z 225.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+north 37
+south 21
+tile 30
+rotate_z 270.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+east 31
+north 38
+tile 31
+rotate_z 315.000000
+translate 2.550000 0.000000 -6.000000
+rotate_z 90.000000
+west 30
+south 23
+tile 32
+rotate_z 0.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 33
+west 39
+tile 33
+rotate_z 45.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 34
+west 32
+tile 34
+rotate_z 90.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 35
+west 33
+tile 35
+rotate_z 135.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+west 34
+south 27
+tile 36
+rotate_z 180.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 37
+south 28
+tile 37
+rotate_z 225.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 38
+west 36
+south 29
+tile 38
+rotate_z 270.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+west 37
+south 30
+tile 39
+rotate_z 315.000000
+translate 2.550000 0.000000 -8.000000
+rotate_z 90.000000
+east 32
+start 0
+goal 33

@@ -1,0 +1,70 @@
+text Now things are getting more interesting. The basic rule of indigo is: Edges of tiles may be connected to other tiles. If they are not, there is a wall and you can't pass. However, every tile can be placed freely in the virtual world. So visually disconnected tiles are not necessarily unaccessible for the player.
+
+tiles 16
+
+tile 0
+translate 0.0 0.0 0.0
+north2 4
+east2 1
+
+tile 1
+translate 4.0 0.0 0.0
+
+tile 2
+translate 8.0 0.0 0.0
+north2 6
+east2 3
+
+tile 3
+translate 12.0 0.0 0.0
+
+tile 4
+translate 0.0 0.0 -4.0
+east2 5
+
+tile 5
+translate 4.0 0.0 -4.0
+north2 9
+
+tile 6
+translate 8.0 0.0 -4.0
+east2 7
+
+tile 7
+translate 12.0 0.0 -4.0
+north2 11
+
+tile 8
+translate 0.0 0.0 -8.0
+north2 12
+east2 9
+
+tile 9
+translate 4.0 0.0 -8.0
+north2 13
+
+tile 10
+translate 8.0 0.0 -8.0
+north2 14
+east2 11
+
+tile 11
+translate 12.0 0.0 -8.0
+north2 15
+
+tile 12
+translate 0.0 0.0 -12.0
+
+tile 13
+translate 4.0 0.0 -12.0
+east2 14
+
+tile 14
+translate 8.0 0.0 -12.0
+
+tile 15
+translate 12.0 0.0 -12.0
+
+start 2
+pan -90.0
+goal 1

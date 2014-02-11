@@ -1,0 +1,41 @@
+text Remeber: The visual representation may be completely different from the actual path.
+
+tiles 9
+
+tile 0
+translate 0.0 0.0 0.0
+north2 1
+
+tile 1
+translate 0.0 0.0 -2.0
+west2 2
+
+tile 2
+translate -2.0 0.0 -2.0
+west2 4
+
+tile 3
+translate -4.0 0.0 -2.0
+west2 5
+
+tile 4
+translate -6.0 0.0 -2.0
+west2 3
+
+tile 5
+translate -8.0 0.0 -2.0
+west2 6
+
+tile 6
+translate -10.0 0.0 -2.0
+north2 7
+
+tile 7
+translate -10.0 0.0 -4.0
+north2 8
+
+tile 8
+translate -10.0 0.0 -6.0
+
+start 0
+goal 8

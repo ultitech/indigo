@@ -1,0 +1,53 @@
+text Walls block your way.
+
+tiles 12
+
+tile 0
+translate 0.0 0.0 0.0
+north2 1
+
+tile 1
+translate 0.0 0.0 -2.0
+north2 2
+
+tile 2
+translate 0.0 0.0 -4.0
+east2 3
+
+tile 3
+translate 2.0 0.0 -4.0
+east2 4
+
+tile 4
+translate 4.0 0.0 -4.0
+north2 5
+
+tile 5
+translate 4.0 0.0 -6.0
+north2 6
+
+tile 6
+translate 4.0 0.0 -8.0
+east2 7
+
+tile 7
+translate 6.0 0.0 -8.0
+south2 8
+
+tile 8
+translate 6.0 0.0 -6.0
+south2 9
+
+tile 9
+translate 6.0 0.0 -4.0
+east2 10
+
+tile 10
+translate 8.0 0.0 -4.0
+east2 11
+
+tile 11
+translate 10.0 0.0 -4.0
+
+start 0
+goal 11
