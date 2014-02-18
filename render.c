@@ -3,8 +3,13 @@
 #include "game.h"
 #include "math.h"
 
-#include <GL/gl.h>
-#include <GL/glu.h>
+#ifdef __APPLE__
+	#include <OpenGL/gl.h>
+	#include <OpenGL/glu.h>
+#else
+	#include <GL/gl.h>
+	#include <GL/glu.h>
+#endif
 
 float camera_angle = 0.0f;
 
