@@ -8,6 +8,10 @@
 
 #include <SDL2/SDL.h>
 
+#ifdef __APPLE__
+#include "CoreFoundation/CoreFoundation.h"
+#endif
+
 struct tile *tiles;
 int tiles_count;
 
@@ -32,8 +36,24 @@ static int iscommand(const char *command, const char *line)
 
 static void loadlevel(const char *filename)
 {
+
+#if defined __APPLE__
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef resourcesURL = CFBundleCopyResourcesDirectoryURL(mainBundle);
+    char path[PATH_MAX];
+    if (!CFURLGetFileSystemRepresentation(resourcesURL, TRUE, (UInt8 *)path, PATH_MAX))
+    {
+        printf("cannot change working directory, check permissions\n");
+        exit(0);
+    }
+    CFRelease(resourcesURL);
+    
+    chdir(path);
+#endif
+    
 	FILE *f = fopen(filename, "r");
-	
+
+    
 	if(!f)
 	{
 		printf("cannot open level file %s\n", filename);

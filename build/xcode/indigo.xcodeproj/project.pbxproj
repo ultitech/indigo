@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA3B48C1674D25C00D84DDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B48B1674D25C00D84DDE /* Cocoa.framework */; };
+		3AA3B4BA1674D3D000D84DDE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4B91674D3D000D84DDE /* OpenGL.framework */; };
+		3AA3B4BC1674D41E00D84DDE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4BB1674D41E00D84DDE /* AudioToolbox.framework */; };
+		3AA3B4BE1674D42300D84DDE /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4BD1674D42300D84DDE /* AudioUnit.framework */; };
+		3AA3B4C01674D42800D84DDE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4BF1674D42800D84DDE /* IOKit.framework */; };
+		3AA3B4C21674D44800D84DDE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4C11674D44800D84DDE /* CoreAudio.framework */; };
+		3AA3B4C41674D45200D84DDE /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4C31674D45200D84DDE /* Carbon.framework */; };
+		3AA3B4CA1674D4EA00D84DDE /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3B4C91674D4EA00D84DDE /* ForceFeedback.framework */; };
+		3AD7D71E1A686F6A008A93D0 /* game.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7D7171A686F6A008A93D0 /* game.c */; };
+		3AD7D71F1A686F6A008A93D0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7D7191A686F6A008A93D0 /* main.c */; };
+		3AD7D7201A686F6A008A93D0 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7D71A1A686F6A008A93D0 /* math.c */; };
+		3AD7D7211A686F6A008A93D0 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7D71C1A686F6A008A93D0 /* render.c */; };
+		3AD7D7221A687017008A93D0 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7A0CA177CCBDA0033DAC4 /* libSDL2.a */; };
+		3AD7D7261A6875C5008A93D0 /* levels in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7D7251A6875C5008A93D0 /* levels */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A215194177C688F00C01863 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3AA3B4881674D25C00D84DDE /* indigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = indigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA3B48B1674D25C00D84DDE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3AA3B48E1674D25C00D84DDE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3AA3B48F1674D25C00D84DDE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3AA3B4901674D25C00D84DDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3AA3B4931674D25C00D84DDE /* indigo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "indigo-Info.plist"; path = "indigo/indigo-Info.plist"; sourceTree = "<group>"; };
+		3AA3B4951674D25C00D84DDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3AA3B4991674D25C00D84DDE /* indigo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "indigo-Prefix.pch"; path = "indigo/indigo-Prefix.pch"; sourceTree = "<group>"; };
+		3AA3B49B1674D25C00D84DDE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3AA3B4B91674D3D000D84DDE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3AA3B4BB1674D41E00D84DDE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3AA3B4BD1674D42300D84DDE /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		3AA3B4BF1674D42800D84DDE /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3AA3B4C11674D44800D84DDE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3AA3B4C31674D45200D84DDE /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		3AA3B4C91674D4EA00D84DDE /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		3AA3B4CB1674D4F300D84DDE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3AC7A0CA177CCBDA0033DAC4 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = lib/libSDL2.a; sourceTree = "<group>"; };
+		3AD7D7171A686F6A008A93D0 /* game.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = game.c; path = ../../game.c; sourceTree = "<group>"; };
+		3AD7D7181A686F6A008A93D0 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = ../../game.h; sourceTree = "<group>"; };
+		3AD7D7191A686F6A008A93D0 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../main.c; sourceTree = "<group>"; };
+		3AD7D71A1A686F6A008A93D0 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = math.c; path = ../../math.c; sourceTree = "<group>"; };
+		3AD7D71B1A686F6A008A93D0 /* math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math.h; path = ../../math.h; sourceTree = "<group>"; };
+		3AD7D71C1A686F6A008A93D0 /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = render.c; path = ../../render.c; sourceTree = "<group>"; };
+		3AD7D71D1A686F6A008A93D0 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render.h; path = ../../render.h; sourceTree = "<group>"; };
+		3AD7D7251A6875C5008A93D0 /* levels */ = {isa = PBXFileReference; lastKnownFileType = folder; name = levels; path = ../../levels; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA3B4851674D25C00D84DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA3B4CA1674D4EA00D84DDE /* ForceFeedback.framework in Frameworks */,
+				3AA3B4C41674D45200D84DDE /* Carbon.framework in Frameworks */,
+				3AA3B4C21674D44800D84DDE /* CoreAudio.framework in Frameworks */,
+				3AA3B4C01674D42800D84DDE /* IOKit.framework in Frameworks */,
+				3AA3B4BE1674D42300D84DDE /* AudioUnit.framework in Frameworks */,
+				3AA3B4BC1674D41E00D84DDE /* AudioToolbox.framework in Frameworks */,
+				3AA3B4BA1674D3D000D84DDE /* OpenGL.framework in Frameworks */,
+				3AA3B48C1674D25C00D84DDE /* Cocoa.framework in Frameworks */,
+				3AD7D7221A687017008A93D0 /* libSDL2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AA3B3801674B89E00D84DDE = {
+			isa = PBXGroup;
+			children = (
+				3AD7D7161A686F54008A93D0 /* Source */,
+				3AD7D7251A6875C5008A93D0 /* levels */,
+				3AA3B4911674D25C00D84DDE /* uEngine Runtime */,
+				3AA3B48A1674D25C00D84DDE /* Frameworks */,
+				3AA3B38C1674B89E00D84DDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA3B38C1674B89E00D84DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B4881674D25C00D84DDE /* indigo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA3B48A1674D25C00D84DDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7A0CA177CCBDA0033DAC4 /* libSDL2.a */,
+				3AA3B48B1674D25C00D84DDE /* Cocoa.framework */,
+				3AA3B48D1674D25C00D84DDE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AA3B48D1674D25C00D84DDE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B48E1674D25C00D84DDE /* AppKit.framework */,
+				3AA3B48F1674D25C00D84DDE /* CoreData.framework */,
+				3AA3B4901674D25C00D84DDE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3AA3B4911674D25C00D84DDE /* uEngine Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B4CD1674D58100D84DDE /* Libraries */,
+				3AA3B4921674D25C00D84DDE /* Supporting Files */,
+			);
+			path = "uEngine Runtime";
+			sourceTree = "<group>";
+		};
+		3AA3B4921674D25C00D84DDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B4931674D25C00D84DDE /* indigo-Info.plist */,
+				3AA3B4941674D25C00D84DDE /* InfoPlist.strings */,
+				3AA3B4991674D25C00D84DDE /* indigo-Prefix.pch */,
+				3AA3B49A1674D25C00D84DDE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AA3B4CD1674D58100D84DDE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B4CB1674D4F300D84DDE /* CoreFoundation.framework */,
+				3AA3B4C91674D4EA00D84DDE /* ForceFeedback.framework */,
+				3AA3B4C31674D45200D84DDE /* Carbon.framework */,
+				3AA3B4C11674D44800D84DDE /* CoreAudio.framework */,
+				3AA3B4BF1674D42800D84DDE /* IOKit.framework */,
+				3AA3B4BD1674D42300D84DDE /* AudioUnit.framework */,
+				3AA3B4BB1674D41E00D84DDE /* AudioToolbox.framework */,
+				3AA3B4B91674D3D000D84DDE /* OpenGL.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3AD7D7161A686F54008A93D0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3AD7D7171A686F6A008A93D0 /* game.c */,
+				3AD7D7181A686F6A008A93D0 /* game.h */,
+				3AD7D7191A686F6A008A93D0 /* main.c */,
+				3AD7D71A1A686F6A008A93D0 /* math.c */,
+				3AD7D71B1A686F6A008A93D0 /* math.h */,
+				3AD7D71C1A686F6A008A93D0 /* render.c */,
+				3AD7D71D1A686F6A008A93D0 /* render.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA3B4871674D25C00D84DDE /* indigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA3B4A31674D25C00D84DDE /* Build configuration list for PBXNativeTarget "indigo" */;
+			buildPhases = (
+				3AA3B4841674D25C00D84DDE /* Sources */,
+				3AA3B4851674D25C00D84DDE /* Frameworks */,
+				3AA3B4861674D25C00D84DDE /* Resources */,
+				3A215194177C688F00C01863 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = indigo;
+			productName = "uEngine Runtime";
+			productReference = 3AA3B4881674D25C00D84DDE /* indigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA3B3821674B89E00D84DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ultitech;
+			};
+			buildConfigurationList = 3AA3B3851674B89E00D84DDE /* Build configuration list for PBXProject "indigo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3AA3B3801674B89E00D84DDE;
+			productRefGroup = 3AA3B38C1674B89E00D84DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA3B4871674D25C00D84DDE /* indigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AA3B4861674D25C00D84DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD7D7261A6875C5008A93D0 /* levels in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA3B4841674D25C00D84DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD7D71F1A686F6A008A93D0 /* main.c in Sources */,
+				3AD7D7211A686F6A008A93D0 /* render.c in Sources */,
+				3AD7D7201A686F6A008A93D0 /* math.c in Sources */,
+				3AD7D71E1A686F6A008A93D0 /* game.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AA3B4941674D25C00D84DDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA3B4951674D25C00D84DDE /* en */,
+			);
+			name = InfoPlist.strings;
+			path = indigo;
+			sourceTree = "<group>";
+		};
+		3AA3B49A1674D25C00D84DDE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA3B49B1674D25C00D84DDE /* en */,
+			);
+			name = Credits.rtf;
+			path = indigo;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA3B38D1674B89E00D84DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3AA3B38E1674B89E00D84DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3AA3B4A41674D25C00D84DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "indigo/indigo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = "indigo/indigo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3AA3B4A51674D25C00D84DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "indigo/indigo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = include;
+				INFOPLIST_FILE = "indigo/indigo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA3B3851674B89E00D84DDE /* Build configuration list for PBXProject "indigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA3B38D1674B89E00D84DDE /* Debug */,
+				3AA3B38E1674B89E00D84DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA3B4A31674D25C00D84DDE /* Build configuration list for PBXNativeTarget "indigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA3B4A41674D25C00D84DDE /* Debug */,
+				3AA3B4A51674D25C00D84DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA3B3821674B89E00D84DDE /* Project object */;
+}

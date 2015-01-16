@@ -1,7 +1,9 @@
 TARGET = indigo
 
+SOURCE_DIR = ../
+
 SOURCES = main.c render.c math.c game.c
-OBJS = $(SOURCES:%.c=%.o)
+OBJS = $(SOURCES:%.c=$(SOURCE_DIR)%.o)
 
 OS := $(shell uname -s)
 
