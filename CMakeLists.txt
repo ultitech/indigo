@@ -17,7 +17,7 @@ set(PROJECT_IDENTIFIER "tech.ulti.indigo")
 # Versioning format: http://semver.org
 set(PROJECT_MAJOR_VERSION 1)
 set(PROJECT_MINOR_VERSION 0)
-set(PROJECT_PATCH_VERSION 0)
+set(PROJECT_PATCH_VERSION 1)
 set(PROJECT_COMPANY "ultitech")
 string(TIMESTAMP YEAR "%Y")
 set(PROJECT_COPYRIGHT "Copyright © 2006-${YEAR}, ${PROJECT_COMPANY}. All rights reserved.")
@@ -89,7 +89,7 @@ if(APPLE)
   set_source_files_properties(${FRAMEWORKS} PROPERTIES MACOSX_PACKAGE_LOCATION Frameworks)
 
   # Copy resources into bundle
-  set(RESOURCES ${PROJECT_SOURCE_DIR}/levels
+  set(RESOURCES ${PROJECT_SOURCE_DIR}/res/levels
                 ${PROJECT_SOURCE_DIR}/Xcode/English.lproj
                 ${PROJECT_SOURCE_DIR}/Xcode/de.lproj)
 
@@ -126,7 +126,7 @@ endif(UNIX AND NOT APPLE)
 if(UNIX AND NOT APPLE OR WIN32)
   add_custom_command(TARGET ${PROJECT_TARGETBIN} POST_BUILD
                    COMMAND ${CMAKE_COMMAND} -E copy_directory
-                       ${PROJECT_SOURCE_DIR}/levels $<TARGET_FILE_DIR:${PROJECT_TARGETBIN}>)
+                       ${PROJECT_SOURCE_DIR}/res $<TARGET_FILE_DIR:${PROJECT_TARGETBIN}>)
 endif(UNIX AND NOT APPLE OR WIN32)
 
 if(WIN32)
