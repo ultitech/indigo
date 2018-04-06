@@ -1,7 +1,7 @@
 #include "render.h"
 #include "game.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 int window_w, window_h;
 SDL_Window *window;

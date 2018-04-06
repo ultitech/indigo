@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #ifdef __APPLE__
 #include "CoreFoundation/CoreFoundation.h"

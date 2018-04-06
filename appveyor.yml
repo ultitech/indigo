@@ -1,0 +1,27 @@
+install:
+  - md lib
+  - cd lib
+
+  - ps: Start-FileDownload 'https://www.libsdl.org/release/SDL2-devel-2.0.8-VC.zip'
+
+  - 7z x *.zip
+
+  - cd ..
+
+environment:
+  SDL2: $(APPVEYOR_BUILD_FOLDER)\lib\SDL2-2.0.8
+
+configuration: Release
+
+before_build:
+  - md build
+  - cd build
+  - cmake -G "Visual Studio 14 2015" ..
+
+build:
+  project: build\indigo.sln
+
+artifacts:
+  - path: build\$(configuration)
+    name: indigo
+    type: zip

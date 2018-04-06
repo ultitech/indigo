@@ -1,0 +1,67 @@
+language: c
+
+os:
+  - linux
+  - osx
+sudo: required
+dist: trusty
+
+compiler:
+  - gcc
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      brew update;
+      brew outdated cmake || brew upgrade cmake;
+      curl -O -L https://www.libsdl.org/release/SDL2-2.0.8.dmg;
+      hdiutil attach SDL2-2.0.8.dmg;
+      sudo cp -a /Volumes/SDL2/SDL2.framework /Library/Frameworks/;
+    elif [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      sudo apt-get update -qq;
+      sudo apt-get install -y libegl1-mesa-dev libgles2-mesa-dev libsdl2-dev;
+    fi
+
+before_script:
+  - mkdir build
+  - cd build
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      cmake -G "Xcode" ..;
+    elif [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      cmake ..;
+    fi
+
+script:
+  - git clean -f
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      xcodebuild -target indigo -configuration Release;
+    elif [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      make;
+    fi
+
+before_deploy:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      git clone https://github.com/andreyvit/yoursway-create-dmg.git;
+      ./yoursway-create-dmg/create-dmg --volname indigo --window-size 650 450 --icon indigo.app 180 190 --hide-extension indigo.app --app-drop-link 420 190 indigo.dmg Release;
+    elif [ "$TRAVIS_OS_NAME" == "linux" ]; then
+       tar -zcvf indigo.tar.gz indigo;
+    fi
+
+deploy:
+  - provider: releases
+    api_key:
+      secure: dJfj+sIIlqYEBZ3Q0ykGh1qX/ufJzS3svGlyNEijT3eQLPJcWuE1Tk5MjjEZDgRuhr+7pN0NMDuYtcbblMxatU4eGzud//ZcFtIqM42i/GLeRQZx1PAGcUJNTrwmdxSINdmbnWBGVn6fmVXuXXjWnK5Ge2Y2CGkUewKShIpuX71EYfpBLNVz+0rGQ+F+umjOFKhIf6ImdLn0TuYmyx7mBWJBrIUm8dn3aN94E/x8kdyGOBioC69h81ZsTX1/FOdMryIbYQ8geMYw0h289e1YkN1aFT0qrs7xkY8z0P5tosvgzwzCPhqftJn+4ayqUbSoQIYx/G2FOudyEDaBUOT9g0P9PXZdibFc3JvOIdJvhMHrEsHxKCaJfKOaMMqfyBOqrZNEbIZRCcQ57JP84wKh51WBxKOeFntStp8prSaSYLXvs6R1rQouaQaR2h72pDiq9u7R88XAyGx90vQJcm68i3/CSyfNZh5kbNZTXRaxQOrgPm9zBl/EDQKeEWYMbl9qchyUfI8p3WbMGPymFjIbI7pcw+x26lySNb+dStzna6V/6dqeLJvu7z5HJonpk8BZjl7X57OF3s0t1FCpPhDoyog1c6LYQYxJHdoci1E45qEQ4W4ehGeGqPEXzDhGIGpA6+nMw3yvERGy+NFJoifqiKz7P0Jkm+0ESkG+NP6F4NA=
+    file: indigo.dmg
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: ultitech/indigo
+      condition: $TRAVIS_OS_NAME = osx
+  - provider: releases
+    api_key:
+      secure: dJfj+sIIlqYEBZ3Q0ykGh1qX/ufJzS3svGlyNEijT3eQLPJcWuE1Tk5MjjEZDgRuhr+7pN0NMDuYtcbblMxatU4eGzud//ZcFtIqM42i/GLeRQZx1PAGcUJNTrwmdxSINdmbnWBGVn6fmVXuXXjWnK5Ge2Y2CGkUewKShIpuX71EYfpBLNVz+0rGQ+F+umjOFKhIf6ImdLn0TuYmyx7mBWJBrIUm8dn3aN94E/x8kdyGOBioC69h81ZsTX1/FOdMryIbYQ8geMYw0h289e1YkN1aFT0qrs7xkY8z0P5tosvgzwzCPhqftJn+4ayqUbSoQIYx/G2FOudyEDaBUOT9g0P9PXZdibFc3JvOIdJvhMHrEsHxKCaJfKOaMMqfyBOqrZNEbIZRCcQ57JP84wKh51WBxKOeFntStp8prSaSYLXvs6R1rQouaQaR2h72pDiq9u7R88XAyGx90vQJcm68i3/CSyfNZh5kbNZTXRaxQOrgPm9zBl/EDQKeEWYMbl9qchyUfI8p3WbMGPymFjIbI7pcw+x26lySNb+dStzna6V/6dqeLJvu7z5HJonpk8BZjl7X57OF3s0t1FCpPhDoyog1c6LYQYxJHdoci1E45qEQ4W4ehGeGqPEXzDhGIGpA6+nMw3yvERGy+NFJoifqiKz7P0Jkm+0ESkG+NP6F4NA=
+    file: indigo.tar.gz
+    skip_cleanup: true
+    on:
+      tags: true
+      repo: ultitech/indigo
+      condition: $TRAVIS_OS_NAME = linux
