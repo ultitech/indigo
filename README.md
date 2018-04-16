@@ -72,7 +72,7 @@ Finally run `make` or open up the Xcode project, select the indigo target, and h
 ##### Visual Studio
 If you haven't already, install Visual Studio and cmake.
 
-Download the latest SDL2 librariy, place it in your preferred location, and set its path as a environment variable (SDL2).
+Download the latest SDL2 library, place it in your preferred location, and set its path as a environment variable (SDL2).
 
 Next create your build directory inside the indigo folder and run `cmake ..`. To [specify](https://cmake.org/cmake/help/v3.0/manual/cmake-generators.7.html#ide-build-tool-generators) the Visual Studio version and build architecture use `cmake -G "Visual Studio ` followed by version, year, and architecture, e.g. `12 2013 Win64" ..`.
 
@@ -83,8 +83,8 @@ Finally open up the indigo solution and hit build.
 Copyright © 2018 by [ultitech](https://www.ulti.tech)
 
 * **Lukas Feller** - *Lead Programmer* - [luckyxxl](https://github.com/luckyxxl)
-* **David Greiner** - *Programmer* - [USADavid](https://github.com/USADavid)
+* **David Greiner** - *Programmer* - [davidgreiner](https://github.com/davidgreiner)
 
 ## License
 
-This project is licensed under the zlib License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the zlib License - see the [LICENSE.txt](LICENSE.txt) file for details.
